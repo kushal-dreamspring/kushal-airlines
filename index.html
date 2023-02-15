@@ -1,73 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kushal Airlines</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mukta:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mukta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar bg-transparent fixed-top z-index-1">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo.svg" alt="Bootstrap" height="35">
-            </a>
-            <button class="btn-login btn me-2 border-0 radius-1 text-light">Log in</button>
-        </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.svg" alt="Bootstrap" height="35" />
+        </a>
+        <button class="btn-login btn me-2 border-0 radius-1 text-light">
+          Log in
+        </button>
+      </div>
     </nav>
     <div class="main min-vh-100 d-flex flex-column">
-        <div
-            class="container flex-grow-1 d-flex flex-column flex-md-row align-items-center justify-content-center opacity-75 justify-content-md-end me-md-0 pe-md-0">
-            <div class="flight-icon d-md-none bg-light rounded px-3 pb-0">
-                <img src="assets/images/airplane.png" alt="airplane icon" class="rounded d-block" height="56">
-                <p class="mb-0 lh-lg text-center text-primary border-3 border-bottom border-primary">Flight</p>
-            </div>
-            <form action=""
-                class="flight-search vh-50 vh-md-100 w-100 vh-50 d-flex flex-column flex-wrap justify-content-around align-items-center py-5 p-4 rounded-4 bg-white">
-                <div class="row mt-5">
-                    <div class="col-12 m-0 mb-3 ps-3 pe-0 py-2 border border-3 border-light-grey rounded-3">
-                        <label for="exampleInputEmail1"
-                            class="form-label text-dark-grey text-uppercase fw-bold">From</label>
-                        <select class="form-select border-0 p-0 fs-4 fw-bold" aria-label="Default select example">
-                            <option value="1">Mumbai, India</option>
-                            <option value="2">New Delhi, India</option>
-                            <option value="3">Bangkok, Thailand</option>
-                            <option value="3">Bengaluru, India</option>
-                            <option value="3">Pune, India</option>
-                        </select>
-                    </div>
-                    <div class="col-12 m-0 mb-3 ps-3 pe-0 py-2 border border-3 border-light-grey rounded-3">
-                        <label for="exampleInputEmail1"
-                            class="form-label text-dark-grey text-uppercase fw-bold">To</label>
-                        <select class="form-select w-100 border-0 p-0 fs-4 fw-bold" aria-label="Default select example">
-                            <option value="1">Mumbai, India</option>
-                            <option value="2">New Delhi, India</option>
-                            <option value="3">Bangkok, Thailand</option>
-                            <option value="3">Bengaluru, India</option>
-                            <option value="3">Pune, India</option>
-                        </select>
-                    </div>
-                    <div class="col-12 m-0 mb-5 ps-3 py-2 border border-3 border-light-grey rounded-3">
-                        <label for="exampleInputEmail1"
-                            class="form-label text-dark-grey text-uppercase fw-bold">Date</label>
-                        <input type="date" class="form-control border-0 p-0 fs-4 fw-bold" id="date"
-                            value="2022-02-14" />
-                    </div>
-                </div>
-                <button type="submit" class="search-button btn btn-primary text-uppercase fs-5">Search</button>
-            </form>
+      <div
+        class="container flex-grow-1 d-flex flex-column flex-md-row align-items-center justify-content-center opacity-75 justify-content-md-end me-md-0 pe-md-0"
+      >
+        <div class="flight-icon d-md-none bg-light rounded px-3 pb-0">
+          <img
+            src="assets/images/airplane.png"
+            alt="airplane icon"
+            class="rounded d-block"
+            height="56"
+          />
+          <p
+            class="mb-0 lh-lg text-center text-primary border-3 border-bottom border-primary"
+          >
+            Flight
+          </p>
         </div>
+        <form
+          action=""
+          class="flight-search vh-50 vh-md-100 w-100 vh-50 d-flex flex-column flex-wrap justify-content-around align-items-center py-5 p-4 rounded-4 bg-white"
+        >
+          <div class="row mt-5">
+            <div
+              class="col-12 m-0 mb-3 ps-3 pe-0 py-2 border border-3 border-light-grey rounded-3"
+            >
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-dark-grey text-uppercase fw-bold"
+                >From</label
+              >
+              <select
+                class="form-select border-0 p-0 fs-4 fw-bold"
+                aria-label="Default select example"
+              >
+                <option value="1">Mumbai, India</option>
+                <option value="2">New Delhi, India</option>
+                <option value="3">Bangkok, Thailand</option>
+                <option value="3">Bengaluru, India</option>
+                <option value="3">Pune, India</option>
+              </select>
+            </div>
+            <div
+              class="col-12 m-0 mb-3 ps-3 pe-0 py-2 border border-3 border-light-grey rounded-3"
+            >
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-dark-grey text-uppercase fw-bold"
+                >To</label
+              >
+              <select
+                class="form-select w-100 border-0 p-0 fs-4 fw-bold"
+                aria-label="Default select example"
+              >
+                <option value="1">Mumbai, India</option>
+                <option value="2">New Delhi, India</option>
+                <option value="3">Bangkok, Thailand</option>
+                <option value="3">Bengaluru, India</option>
+                <option value="3">Pune, India</option>
+              </select>
+            </div>
+            <div
+              class="col-12 m-0 mb-5 ps-3 py-2 border border-3 border-light-grey rounded-3"
+            >
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-dark-grey text-uppercase fw-bold"
+                >Date</label
+              >
+              <input
+                type="date"
+                class="form-control border-0 p-0 fs-4 fw-bold"
+                id="date"
+                value="2022-02-14"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="search-button btn btn-primary text-uppercase fs-5"
+          >
+            Search
+          </button>
+        </form>
+      </div>
     </div>
-    <script src="./assets/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="./assets/bootstrap/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
