@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushal Airlines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mukta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar bg-transparent z-index-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images/logo.svg" alt="Bootstrap" height="35" />
+        </a>
+        <button class="btn-login btn me-2 border-0 radius-1 text-light">
+          Log in
+        </button>
+      </div>
+    </nav>
+    <div
+      class="container d-flex flex-column my-1"
+      style="width: 100%; max-width: 900px; margin: auto"
+    >
+      <form action="./search" method="get">
+        <div class="row p-5 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 my-2">
+            <label for="source" class="form-label text-uppercase">From</label>
+            <select
+              id="source"
+              name="source"
+              class="form-select border-0 p-0 fs-4 fw-bold"
+              aria-label="Source"
+            >
+              <option value="1">Mumbai, India</option>
+              <option value="2">New Delhi, India</option>
+              <option value="3">Bangkok, Thailand</option>
+              <option value="4">Bengaluru, India</option>
+              <option value="5">Pune, India</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-2">
+            <label for="destination" class="form-label text-uppercase"
+              >To</label
+            >
+            <select
+              id="destination"
+              name="destination"
+              class="form-select border-0 p-0 fs-4 fw-bold"
+              aria-label="Destination"
+            >
+              <option value="1">Mumbai, India</option>
+              <option value="2">New Delhi, India</option>
+              <option value="3">Bangkok, Thailand</option>
+              <option value="4">Bengaluru, India</option>
+              <option value="5">Pune, India</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-2">
+            <label for="date" class="form-label text-uppercase">Date</label>
+            <input
+              id="date"
+              type="date"
+              name="date"
+              class="form-control border-0 p-0 fs-4 fw-bold"
+              id="date"
+              value="2022-02-14"
+            />
+          </div>
+          <!-- <div class="col-12 d-flex justify-content-center">
+            <button
+              type="submit"
+              class="my-5 btn btn-primary text-uppercase fs-6"
+            >
+              Search
+            </button>
+          </div> -->
+        </div>
+      </form>
+      <h2 class="h2">Best departing flights</h2>
+      <p class="p text-secondary">
+        <small>
+          Ranked based on price and convenience. Prices include required taxes +
+          fees for 1 adult. Optional charges and Bag fees may apply
+        </small>
+      </p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button
+              class="accordion-button collapsed bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven"
+              aria-expanded="false"
+              aria-controls="collapseEleven"
+            >
+              <div class="w-100 me-2 d-flex justify-content-between">
+                <img
+                  src="https://www.gstatic.com/flights/airline_logos/70px/I5.png"
+                  alt="Air Asia"
+                  height="30px"
+                />
+                <div class="d-flex flex-column">
+                  <small class="fw-bold text-dark">5:55 PM - 8:20 PM</small>
+                  <small class="text-secondary">Air Asia</small>
+                </div>
+                <div class="text-dark">9 hr 5 min 1 stop</div>
+                <div class="text-success fw-bold">₹10,813</div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="collapseEleven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEleven"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                6:40 AM Kempegowda International Airport Bengaluru (BLR)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                10:40 AM Prayagraj Airport (IXD)
+              </div>
+              <div class="m-2 p-4 border-bottom border-top">
+                Layover:
+                <span class="text-secondary">
+                  5 hr 45 min Prayagraj (IXD)
+                </span>
+              </div>
+              <div
+                class="d-flex flex-column m-4 px-4 py-1 lh-lg border-start border-5"
+              >
+                4:25 PM Prayagraj Airport (IXD)
+                <small class="text-secondary">Travel Time 2 Hr</small>
+                5:20 PM Chaudhary Charan Singh International Airport (LKO)
+              </div>
+              <button class="btn btn-outline-primary rounded-5">Select</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination m-auto my-4">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+    <script
+      src="../assets/bootstrap/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      let params = new URL(document.location).searchParams;
+      document.getElementById("source").value = params.get("source");
+      document.getElementById("destination").value = params.get("destination");
+      document.getElementById("date").value = params.get("date");
+    </script>
+  </body>
+</html>

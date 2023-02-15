@@ -45,8 +45,9 @@
           </p>
         </div>
         <form
-          action=""
-          class="flight-search vh-50 vh-md-100 w-100 vh-50 d-flex flex-column flex-wrap justify-content-around align-items-center py-5 p-4 rounded-4 bg-white"
+          action="./search"
+          method="get"
+          class="flight-search vh-50 vh-md-100 w-100 vh-50 d-flex flex-column flex-wrap justify-content-around align-items-center p-5 rounded-4 bg-white"
         >
           <div class="row mt-5">
             <div
@@ -58,14 +59,16 @@
                 >From</label
               >
               <select
+                id="source"
+                name="source"
                 class="form-select border-0 p-0 fs-4 fw-bold"
                 aria-label="Default select example"
               >
                 <option value="1">Mumbai, India</option>
                 <option value="2">New Delhi, India</option>
                 <option value="3">Bangkok, Thailand</option>
-                <option value="3">Bengaluru, India</option>
-                <option value="3">Pune, India</option>
+                <option value="4">Bengaluru, India</option>
+                <option value="5">Pune, India</option>
               </select>
             </div>
             <div
@@ -77,14 +80,16 @@
                 >To</label
               >
               <select
+                id="destination"
+                name="destination"
                 class="form-select w-100 border-0 p-0 fs-4 fw-bold"
                 aria-label="Default select example"
               >
                 <option value="1">Mumbai, India</option>
                 <option value="2">New Delhi, India</option>
                 <option value="3">Bangkok, Thailand</option>
-                <option value="3">Bengaluru, India</option>
-                <option value="3">Pune, India</option>
+                <option value="4">Bengaluru, India</option>
+                <option value="5">Pune, India</option>
               </select>
             </div>
             <div
@@ -96,7 +101,9 @@
                 >Date</label
               >
               <input
+                id="date"
                 type="date"
+                name="date"
                 class="form-control border-0 p-0 fs-4 fw-bold"
                 id="date"
                 value="2022-02-14"
@@ -113,7 +120,7 @@
       </div>
     </div>
     <script
-      src="./assets/bootstrap/js/bootstrap.min.js"
+      src="./assets/bootstrap/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
   </body>
