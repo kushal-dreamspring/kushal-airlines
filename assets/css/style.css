@@ -10976,6 +10976,10 @@ body {
   border-radius: 24px;
 }
 
+#loader {
+  height: 50px;
+}
+
 @media (min-width: 768px) {
   .flight-search {
     height: 100vh;
